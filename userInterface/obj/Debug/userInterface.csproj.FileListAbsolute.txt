@@ -1,0 +1,9 @@
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\userInterface.exe.config
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\userInterface.exe
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\userInterface.pdb
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.csprojAssemblyReference.cache
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.Properties.Resources.resources
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.csproj.GenerateResource.cache
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.exe
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.pdb
