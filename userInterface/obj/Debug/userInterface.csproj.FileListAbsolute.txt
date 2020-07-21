@@ -7,7 +7,6 @@ C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInter
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.csproj.CoreCompileInputs.cache
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.exe
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.pdb
-C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.MainMenu.resources
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\EntityFramework.dll
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\GMap.NET.Core.dll
@@ -23,3 +22,4 @@ C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\System.Da
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.exe.config
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.csproj.CopyComplete
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.InformationMenu.resources
