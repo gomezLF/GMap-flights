@@ -9,7 +9,6 @@ namespace userInterface
     public partial class InformationMenu : Form
     {
         private SqliteDataAccess dataAccess;
-        private List<Flight> listFlights;
         private int pageNumber;
 
         public InformationMenu()
@@ -19,10 +18,8 @@ namespace userInterface
             dataAccess = new SqliteDataAccess();
             pageNumber = 0;
 
-            //listFlights = dataAccess.LoadFlights("SELECT * FROM flights-data LIMIT 100, 5000");
-
-            //listFlight_Dgv.DataSource = null;
-            //listFlight_Dgv.DataSource = listFlights;
+            listFlight_Dgv.DataSource = null;
+            listFlight_Dgv.DataSource = dataAccess.LoadData("SELECT * FROM flightsData LIMIT 100, 5000");
         }
 
         #region Menu Buttons

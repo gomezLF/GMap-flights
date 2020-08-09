@@ -19,9 +19,18 @@ namespace model
             sQLiteConnection = new SQLiteConnection("Data Source=./flights_database.db;Version=3;");
         }
 
-        public void LoadData()
+        public DataTable LoadData(String query)
         {
+            DataTable dataTable = new DataTable();
 
+            OpenConnection();
+
+            SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(query, sQLiteConnection);
+            dataAdapter.Fill(dataTable);
+
+            CloseConnection();
+
+            return dataTable;
         }
 
         private void OpenConnection()
