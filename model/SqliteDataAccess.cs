@@ -12,35 +12,28 @@ namespace model
 {
     public class SqliteDataAccess
     {
-        private SQLiteConnection sQLiteConnection;
+        
 
         public SqliteDataAccess()
         {
-            sQLiteConnection = new SQLiteConnection("Data Source=./flights_database.db;Version=3;");
+            
         }
 
         public DataTable LoadData(String query)
         {
             DataTable dataTable = new DataTable();
 
-            OpenConnection();
-
-            SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(query, sQLiteConnection);
-            dataAdapter.Fill(dataTable);
-
-            CloseConnection();
+            using (SQLiteConnection connection = new SQLiteConnection("Data Source=./flights_database.db;Version=3;"))
+            {
+                using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(query, connection))
+                {
+                    connection.Open();
+                    dataAdapter.Fill(dataTable);
+                    connection.Close();
+                }
+            }
 
             return dataTable;
-        }
-
-        private void OpenConnection()
-        {
-            sQLiteConnection.Open();
-        }
-
-        private void CloseConnection()
-        {
-            sQLiteConnection.Close();
         }
     }
 }

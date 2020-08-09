@@ -8,6 +8,8 @@ namespace userInterface
 {
     public partial class InformationMenu : Form
     {
+        private const int DATA_PER_PAGE = 50;
+
         private SqliteDataAccess dataAccess;
         private int pageNumber;
 
@@ -16,10 +18,10 @@ namespace userInterface
             InitializeComponent();
 
             dataAccess = new SqliteDataAccess();
-            pageNumber = 0;
+            pageNumber = 450000;
 
             listFlight_Dgv.DataSource = null;
-            listFlight_Dgv.DataSource = dataAccess.LoadData("SELECT * FROM flightsData LIMIT 100, 5000");
+            listFlight_Dgv.DataSource = dataAccess.LoadData($"SELECT *  FROM flightsData WHERE ID >= {pageNumber} ORDER BY ID LIMIT {DATA_PER_PAGE}");
         }
 
         #region Menu Buttons
@@ -84,10 +86,25 @@ namespace userInterface
 
         private void NextPage()
         {
+            pageNumber += DATA_PER_PAGE;
 
+            listFlight_Dgv.DataSource = null;
+            listFlight_Dgv.DataSource = dataAccess.LoadData($"SELECT *  FROM flightsData WHERE ID >= {pageNumber} ORDER BY ID LIMIT {DATA_PER_PAGE}");
+
+            CheckPaginationLimits();
         }
 
         private void PreviousPage()
+        {
+            pageNumber -= DATA_PER_PAGE;
+
+            listFlight_Dgv.DataSource = null;
+            listFlight_Dgv.DataSource = dataAccess.LoadData($"SELECT *  FROM flightsData WHERE ID >= {pageNumber} ORDER BY ID LIMIT {DATA_PER_PAGE}");
+
+            CheckPaginationLimits();
+        }
+
+        private void CheckPaginationLimits()
         {
 
         }
