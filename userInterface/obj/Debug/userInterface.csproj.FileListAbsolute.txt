@@ -23,3 +23,4 @@ C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\System.Da
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.exe.config
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.csproj.CopyComplete
 C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\obj\Debug\userInterface.InformationMenu.resources
+C:\Users\Windows 10\RiderProjects\Gmap-flights\userInterface\bin\Debug\flights_database.db

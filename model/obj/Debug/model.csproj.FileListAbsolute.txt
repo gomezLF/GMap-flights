@@ -1,0 +1,6 @@
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\bin\Debug\model.dll
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\bin\Debug\model.pdb
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.csprojAssemblyReference.cache
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.dll
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.pdb

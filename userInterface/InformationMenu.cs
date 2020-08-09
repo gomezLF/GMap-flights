@@ -6,6 +6,10 @@ namespace userInterface
 {
     public partial class InformationMenu : Form
     {
+
+        private const string FLIGHTS_DATA_PATH = "";
+        private int pageNumber;
+
         public InformationMenu()
         {
             InitializeComponent();
