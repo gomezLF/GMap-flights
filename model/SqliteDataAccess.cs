@@ -12,20 +12,26 @@ namespace model
 {
     public class SqliteDataAccess
     {
-        private const string ID = "Default";
+        private SQLiteConnection sQLiteConnection;
 
-        public List<Flight> LoadFlights(string query)
+        public SqliteDataAccess()
         {
-            using (IDbConnection dbConnection = new SQLiteConnection(LoadConnectionString()))
-            {
-                var output = dbConnection.Query<Flight>(query, new DynamicParameters());
-                return output.ToList();
-            }
+            sQLiteConnection = new SQLiteConnection("Data Source=./flights_database.db;Version=3;");
         }
 
-        public string LoadConnectionString()
+        public void LoadData()
         {
-            return ConfigurationManager.ConnectionStrings[ID].ConnectionString;
+
+        }
+
+        private void OpenConnection()
+        {
+            sQLiteConnection.Open();
+        }
+
+        private void CloseConnection()
+        {
+            sQLiteConnection.Close();
         }
     }
 }

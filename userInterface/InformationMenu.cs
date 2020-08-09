@@ -1,18 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
+using model;
 
 namespace userInterface
 {
     public partial class InformationMenu : Form
     {
-
-        private const string FLIGHTS_DATA_PATH = "";
+        private SqliteDataAccess dataAccess;
+        private List<Flight> listFlights;
         private int pageNumber;
 
         public InformationMenu()
         {
             InitializeComponent();
+
+            dataAccess = new SqliteDataAccess();
+            pageNumber = 0;
+
+            //listFlights = dataAccess.LoadFlights("SELECT * FROM flights-data LIMIT 100, 5000");
+
+            //listFlight_Dgv.DataSource = null;
+            //listFlight_Dgv.DataSource = listFlights;
         }
 
         #region Menu Buttons

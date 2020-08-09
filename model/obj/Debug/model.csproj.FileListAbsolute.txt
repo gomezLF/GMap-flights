@@ -4,3 +4,9 @@ C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.csprojAssem
 C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.csproj.CoreCompileInputs.cache
 C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.dll
 C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.pdb
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\bin\Debug\Dapper.dll
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\bin\Debug\System.Data.SQLite.dll
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\bin\Debug\Dapper.xml
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\bin\Debug\System.Data.SQLite.xml
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Windows 10\RiderProjects\Gmap-flights\model\obj\Debug\model.csproj.CopyComplete

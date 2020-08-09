@@ -51,14 +51,14 @@ namespace userInterface
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.listFlight_Dgv = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.nextDataGrid = new System.Windows.Forms.Button();
             this.backDataGrid = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listFlight_Dgv)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@ namespace userInterface
             this.gMapControl1.RetryLoadTile = 0;
             this.gMapControl1.RoutesEnabled = true;
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int) (((byte) (33)))), ((int) (((byte) (65)))), ((int) (((byte) (105)))), ((int) (((byte) (225)))));
+            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
             this.gMapControl1.Size = new System.Drawing.Size(520, 278);
             this.gMapControl1.TabIndex = 0;
@@ -103,7 +103,7 @@ namespace userInterface
             // 
             this.cleanUp.AutoSize = true;
             this.cleanUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cleanUp.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.cleanUp.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cleanUp.Location = new System.Drawing.Point(339, 231);
             this.cleanUp.Name = "cleanUp";
             this.cleanUp.Size = new System.Drawing.Size(91, 29);
@@ -116,7 +116,7 @@ namespace userInterface
             // 
             this.search.AutoSize = true;
             this.search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.search.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.search.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(183, 231);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(91, 29);
@@ -159,7 +159,7 @@ namespace userInterface
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
@@ -170,7 +170,7 @@ namespace userInterface
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(21, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 13);
@@ -181,7 +181,7 @@ namespace userInterface
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(16, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 13);
@@ -192,7 +192,7 @@ namespace userInterface
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(16, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 13);
@@ -203,7 +203,7 @@ namespace userInterface
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(13, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 13);
@@ -214,7 +214,7 @@ namespace userInterface
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(13, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 13);
@@ -224,7 +224,7 @@ namespace userInterface
             // tailNumber_txt
             // 
             this.tailNumber_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tailNumber_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.tailNumber_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tailNumber_txt.Location = new System.Drawing.Point(189, 4);
             this.tailNumber_txt.Name = "tailNumber_txt";
             this.tailNumber_txt.Size = new System.Drawing.Size(375, 26);
@@ -233,7 +233,7 @@ namespace userInterface
             // cityOrigin_Txt
             // 
             this.cityOrigin_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cityOrigin_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.cityOrigin_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOrigin_Txt.Location = new System.Drawing.Point(189, 78);
             this.cityOrigin_Txt.Name = "cityOrigin_Txt";
             this.cityOrigin_Txt.Size = new System.Drawing.Size(375, 26);
@@ -242,7 +242,7 @@ namespace userInterface
             // stateOrigin_Txt
             // 
             this.stateOrigin_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.stateOrigin_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.stateOrigin_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stateOrigin_Txt.Location = new System.Drawing.Point(189, 111);
             this.stateOrigin_Txt.Name = "stateOrigin_Txt";
             this.stateOrigin_Txt.Size = new System.Drawing.Size(375, 26);
@@ -251,7 +251,7 @@ namespace userInterface
             // destinationCity_Txt
             // 
             this.destinationCity_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.destinationCity_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.destinationCity_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.destinationCity_Txt.Location = new System.Drawing.Point(189, 144);
             this.destinationCity_Txt.Name = "destinationCity_Txt";
             this.destinationCity_Txt.Size = new System.Drawing.Size(375, 26);
@@ -260,7 +260,7 @@ namespace userInterface
             // destinationState_Txt
             // 
             this.destinationState_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.destinationState_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.destinationState_Txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.destinationState_Txt.Location = new System.Drawing.Point(189, 177);
             this.destinationState_Txt.Name = "destinationState_Txt";
             this.destinationState_Txt.Size = new System.Drawing.Size(375, 26);
@@ -282,7 +282,38 @@ namespace userInterface
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"});
+            this.comboBox1.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
             this.comboBox1.Location = new System.Drawing.Point(3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 21);
@@ -293,7 +324,19 @@ namespace userInterface
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"});
+            this.comboBox2.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
             this.comboBox2.Location = new System.Drawing.Point(159, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(150, 21);
@@ -304,22 +347,23 @@ namespace userInterface
             this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {"2017"});
+            this.comboBox3.Items.AddRange(new object[] {
+            "2017"});
             this.comboBox3.Location = new System.Drawing.Point(315, 3);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(150, 21);
             this.comboBox3.TabIndex = 2;
             // 
-            // dataGridView1
+            // listFlight_Dgv
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 296);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1160, 315);
-            this.dataGridView1.TabIndex = 2;
+            this.listFlight_Dgv.AllowUserToAddRows = false;
+            this.listFlight_Dgv.AllowUserToDeleteRows = false;
+            this.listFlight_Dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listFlight_Dgv.Location = new System.Drawing.Point(12, 296);
+            this.listFlight_Dgv.Name = "listFlight_Dgv";
+            this.listFlight_Dgv.ReadOnly = true;
+            this.listFlight_Dgv.Size = new System.Drawing.Size(1160, 315);
+            this.listFlight_Dgv.TabIndex = 2;
             // 
             // panel2
             // 
@@ -335,7 +379,7 @@ namespace userInterface
             // nextDataGrid
             // 
             this.nextDataGrid.AutoSize = true;
-            this.nextDataGrid.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.nextDataGrid.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextDataGrid.Location = new System.Drawing.Point(606, 12);
             this.nextDataGrid.Name = "nextDataGrid";
             this.nextDataGrid.Size = new System.Drawing.Size(91, 29);
@@ -347,7 +391,7 @@ namespace userInterface
             // backDataGrid
             // 
             this.backDataGrid.AutoSize = true;
-            this.backDataGrid.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.backDataGrid.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backDataGrid.Location = new System.Drawing.Point(486, 12);
             this.backDataGrid.Name = "backDataGrid";
             this.backDataGrid.Size = new System.Drawing.Size(91, 29);
@@ -362,7 +406,7 @@ namespace userInterface
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.listFlight_Dgv);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gMapControl1);
             this.Name = "InformationMenu";
@@ -372,10 +416,11 @@ namespace userInterface
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listFlight_Dgv)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.Button backDataGrid;
@@ -384,7 +429,7 @@ namespace userInterface
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView listFlight_Dgv;
         private System.Windows.Forms.TextBox destinationCity_Txt;
         private System.Windows.Forms.TextBox destinationState_Txt;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
