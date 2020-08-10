@@ -11,6 +11,7 @@ namespace userInterface
         private const int DATA_PER_PAGE = 50;
 
         private SqliteDataAccess dataAccess;
+        private string queryCommand;
         private int pageNumber;
 
         public InformationMenu()
@@ -18,13 +19,19 @@ namespace userInterface
             InitializeComponent();
 
             dataAccess = new SqliteDataAccess();
+            queryCommand = $"SELECT *  FROM flightsData WHERE ID >= {pageNumber} ORDER BY ID LIMIT {DATA_PER_PAGE}";
             pageNumber = 1;
         }
 
         private void InformationMenu_Load(object sender, EventArgs e)
         {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
             listFlight_Dgv.DataSource = null;
-            listFlight_Dgv.DataSource = dataAccess.LoadData($"SELECT *  FROM flightsData WHERE ID >= {pageNumber} ORDER BY ID LIMIT {DATA_PER_PAGE}");
+            listFlight_Dgv.DataSource = dataAccess.LoadData(queryCommand);
             CheckPaginationLimits();
         }
 
@@ -32,7 +39,17 @@ namespace userInterface
 
         private void Search_Click(object sender, EventArgs e)
         {
-            
+            queryCommand = $"SELECT *  FROM flightsData WHERE ID >= {pageNumber}";
+
+            SearchTailNumber();
+            //SearchDateFlight();
+            //SearchCityOrigen();
+            //SearchStateOrigen();
+            //SearchDestinationCity();
+            //SearchDestinationState();
+
+            queryCommand = $"{queryCommand} ORDER BY ID LIMIT {DATA_PER_PAGE}";
+            LoadData();
         }
 
         private void CleanUp_Click(object sender, EventArgs e)
@@ -64,32 +81,50 @@ namespace userInterface
 
         private void SearchTailNumber()
         {
-
+            if (!tailNumber_txt.Text.Equals(""))
+            {
+                queryCommand = $"{queryCommand} AND TailNum = '{tailNumber_txt.Text}'";
+            }
         }
 
         private void SearchDateFlight()
         {
-
+            if (!tailNumber_txt.Text.Equals(""))
+            {
+                queryCommand = $"{queryCommand} AND TailNum = {tailNumber_txt.Text}";
+            }
         }
 
         private void SearchCityOrigen()
         {
-
+            if (!tailNumber_txt.Text.Equals(""))
+            {
+                queryCommand = $"{queryCommand} AND TailNum = {tailNumber_txt.Text}";
+            }
         }
 
         private void SearchStateOrigen()
         {
-
+            if (!tailNumber_txt.Text.Equals(""))
+            {
+                queryCommand = $"{queryCommand} AND TailNum = {tailNumber_txt.Text}";
+            }
         }
 
         private void SearchDestinationCity()
         {
-
+            if (!tailNumber_txt.Text.Equals(""))
+            {
+                queryCommand = $"{queryCommand} AND TailNum = {tailNumber_txt.Text}";
+            }
         }
 
         private void SearchDestinationState()
         {
-
+            if (!tailNumber_txt.Text.Equals(""))
+            {
+                queryCommand = $"{queryCommand} AND TailNum = {tailNumber_txt.Text}";
+            }
         }
 
         #endregion
@@ -101,7 +136,7 @@ namespace userInterface
             pageNumber += DATA_PER_PAGE;
 
             listFlight_Dgv.DataSource = null;
-            listFlight_Dgv.DataSource = dataAccess.LoadData($"SELECT *  FROM flightsData WHERE ID >= {pageNumber} ORDER BY ID LIMIT {DATA_PER_PAGE}");
+            listFlight_Dgv.DataSource = dataAccess.LoadData(queryCommand);
 
             CheckPaginationLimits();
         }
@@ -111,7 +146,7 @@ namespace userInterface
             pageNumber -= DATA_PER_PAGE;
 
             listFlight_Dgv.DataSource = null;
-            listFlight_Dgv.DataSource = dataAccess.LoadData($"SELECT *  FROM flightsData WHERE ID >= {pageNumber} ORDER BY ID LIMIT {DATA_PER_PAGE}");
+            listFlight_Dgv.DataSource = dataAccess.LoadData(queryCommand);
 
             CheckPaginationLimits();
         }
