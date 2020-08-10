@@ -48,13 +48,13 @@ namespace userInterface
             this.destinationCity_Txt = new System.Windows.Forms.TextBox();
             this.destinationState_Txt = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.day_cBB = new System.Windows.Forms.ComboBox();
+            this.month_cBB = new System.Windows.Forms.ComboBox();
+            this.year_cBB = new System.Windows.Forms.ComboBox();
             this.listFlight_Dgv = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.nextDataGrid = new System.Windows.Forms.Button();
-            this.backDataGrid = new System.Windows.Forms.Button();
+            this.previousDataGrid = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -269,20 +269,20 @@ namespace userInterface
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox3);
+            this.flowLayoutPanel1.Controls.Add(this.day_cBB);
+            this.flowLayoutPanel1.Controls.Add(this.month_cBB);
+            this.flowLayoutPanel1.Controls.Add(this.year_cBB);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(141, 37);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(471, 34);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
-            // comboBox1
+            // day_cBB
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.day_cBB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.day_cBB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.day_cBB.FormattingEnabled = true;
+            this.day_cBB.Items.AddRange(new object[] {
             "01",
             "02",
             "03",
@@ -314,34 +314,34 @@ namespace userInterface
             "29",
             "30",
             "31"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 21);
-            this.comboBox1.TabIndex = 0;
+            this.day_cBB.Location = new System.Drawing.Point(3, 3);
+            this.day_cBB.Name = "day_cBB";
+            this.day_cBB.Size = new System.Drawing.Size(150, 21);
+            this.day_cBB.TabIndex = 0;
             // 
-            // comboBox2
+            // month_cBB
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.month_cBB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.month_cBB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.month_cBB.FormattingEnabled = true;
+            this.month_cBB.Items.AddRange(new object[] {
             "01"});
-            this.comboBox2.Location = new System.Drawing.Point(159, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 21);
-            this.comboBox2.TabIndex = 1;
+            this.month_cBB.Location = new System.Drawing.Point(159, 3);
+            this.month_cBB.Name = "month_cBB";
+            this.month_cBB.Size = new System.Drawing.Size(150, 21);
+            this.month_cBB.TabIndex = 1;
             // 
-            // comboBox3
+            // year_cBB
             // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.year_cBB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.year_cBB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.year_cBB.FormattingEnabled = true;
+            this.year_cBB.Items.AddRange(new object[] {
             "2017"});
-            this.comboBox3.Location = new System.Drawing.Point(315, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(150, 21);
-            this.comboBox3.TabIndex = 2;
+            this.year_cBB.Location = new System.Drawing.Point(315, 3);
+            this.year_cBB.Name = "year_cBB";
+            this.year_cBB.Size = new System.Drawing.Size(150, 21);
+            this.year_cBB.TabIndex = 2;
             // 
             // listFlight_Dgv
             // 
@@ -358,7 +358,7 @@ namespace userInterface
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel2.Controls.Add(this.nextDataGrid);
-            this.panel2.Controls.Add(this.backDataGrid);
+            this.panel2.Controls.Add(this.previousDataGrid);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 617);
             this.panel2.Name = "panel2";
@@ -377,17 +377,17 @@ namespace userInterface
             this.nextDataGrid.UseVisualStyleBackColor = true;
             this.nextDataGrid.Click += new System.EventHandler(this.NextDataGrid_Click);
             // 
-            // backDataGrid
+            // previousDataGrid
             // 
-            this.backDataGrid.AutoSize = true;
-            this.backDataGrid.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backDataGrid.Location = new System.Drawing.Point(486, 12);
-            this.backDataGrid.Name = "backDataGrid";
-            this.backDataGrid.Size = new System.Drawing.Size(91, 29);
-            this.backDataGrid.TabIndex = 2;
-            this.backDataGrid.Text = "Atras";
-            this.backDataGrid.UseVisualStyleBackColor = true;
-            this.backDataGrid.Click += new System.EventHandler(this.BackDataGrid_Click);
+            this.previousDataGrid.AutoSize = true;
+            this.previousDataGrid.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.previousDataGrid.Location = new System.Drawing.Point(486, 12);
+            this.previousDataGrid.Name = "previousDataGrid";
+            this.previousDataGrid.Size = new System.Drawing.Size(91, 29);
+            this.previousDataGrid.TabIndex = 2;
+            this.previousDataGrid.Text = "Atras";
+            this.previousDataGrid.UseVisualStyleBackColor = true;
+            this.previousDataGrid.Click += new System.EventHandler(this.BackDataGrid_Click);
             // 
             // InformationMenu
             // 
@@ -400,6 +400,7 @@ namespace userInterface
             this.Controls.Add(this.gMapControl1);
             this.Name = "InformationMenu";
             this.Text = "InformationMenu";
+            this.Load += new System.EventHandler(this.InformationMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -412,12 +413,12 @@ namespace userInterface
 
         }
 
-        private System.Windows.Forms.Button backDataGrid;
+        private System.Windows.Forms.Button previousDataGrid;
         private System.Windows.Forms.TextBox cityOrigin_Txt;
         private System.Windows.Forms.Button cleanUp;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox day_cBB;
+        private System.Windows.Forms.ComboBox month_cBB;
+        private System.Windows.Forms.ComboBox year_cBB;
         private System.Windows.Forms.DataGridView listFlight_Dgv;
         private System.Windows.Forms.TextBox destinationCity_Txt;
         private System.Windows.Forms.TextBox destinationState_Txt;
